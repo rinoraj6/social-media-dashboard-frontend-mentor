@@ -425,9 +425,9 @@ body.active {
   .analytics-grid{
     padding: 0 1rem;
   }
-  .section-heading{
+  /* .section-heading{ */
     /* padding: 0 1rem; */
-  }
+  /* } */
   .overview-grid-1,.overview-grid-2{
     padding: 0 1rem;
   }
