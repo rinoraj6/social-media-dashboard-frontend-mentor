@@ -392,6 +392,10 @@ body.active {
       }
     }
   }
+
+  .overview-section-heading {
+    padding-top: 1.5rem !important;
+  }
 }
 
 @media screen and (max-width: 820px) {
@@ -420,9 +424,7 @@ body.active {
   .analytics-grid {
     padding: 0 1rem;
   }
-  /* .section-heading{ */
-  /* padding: 0 1rem; */
-  /* } */
+  
   .overview-grid-1,
   .overview-grid-2 {
     padding: 0 1rem;
