@@ -44,6 +44,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
 .top-dashboard {
   width: 100%;
   background-color: var(--Blue--50--Top--BG--Pattern);
@@ -118,8 +123,6 @@
   position: absolute;
   top: -7rem;
 }
-
-
 
 .social-analytics-box {
   background-color: var(--Navy--50--Card--BG);
@@ -366,21 +369,21 @@ body.active {
 /* mobile view */
 /* ---------------------------------- */
 
-@media screen and (max-width:680px) {
-
-  .top-dashboard{
+@media screen and (max-width: 680px) {
+  .top-dashboard {
     padding-bottom: 4rem;
-    .wrapper{
+    .wrapper {
       display: flex;
       flex-direction: column;
       padding: 0;
-      gap:1.5rem;
+      gap: 1.5rem;
 
-      >.heading,>.toggle-btn{
+      > .heading,
+      > .toggle-btn {
         width: 100%;
       }
 
-      >.toggle-btn{
+      > .toggle-btn {
         border-top: 1px solid var(--Gray--900--Top--BG--Pattern);
         padding-top: 1rem;
         display: flex;
@@ -389,54 +392,45 @@ body.active {
       }
     }
   }
-  
 }
 
-
-
-
-@media screen and (max-width:820px) {
-
-  .analytics-grid{
-    top:-2rem;
+@media screen and (max-width: 820px) {
+  .analytics-grid {
+    top: -2rem;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4,1fr) ;
+    grid-template-rows: repeat(4, 1fr);
     width: 100%;
   }
 
-  .overview-today{
+  .overview-today {
     margin-top: 57rem;
   }
-  .overview-grid-1,.overview-grid-2{
+  .overview-grid-1,
+  .overview-grid-2 {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4,1fr) ;
+    grid-template-rows: repeat(4, 1fr);
     width: 100%;
   }
-
 }
 
-
-
-
 @media screen and (max-width: 1220px) {
-  .top-dashboard>.wrapper{
-      padding: 0 1rem;
+  .top-dashboard > .wrapper {
+    padding: 0 1rem;
   }
-  .analytics-grid{
+  .analytics-grid {
     padding: 0 1rem;
   }
   /* .section-heading{ */
-    /* padding: 0 1rem; */
+  /* padding: 0 1rem; */
   /* } */
-  .overview-grid-1,.overview-grid-2{
+  .overview-grid-1,
+  .overview-grid-2 {
     padding: 0 1rem;
   }
-  .overview-today>.wrapper>.section-heading{
+  .overview-today > .wrapper > .section-heading {
     /* border: 2px solid red; */
     padding: 0 1rem;
   }
 }
-
-
 
 /* ---------------------------------- */
